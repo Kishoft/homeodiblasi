@@ -1,7 +1,7 @@
 <template>
   <section>
-      <h3>Caso de Herpes Genital</h3>
-
+      	<h3>Caso de Herpes Genital</h3>
+      	<img src="~/assets/images/pages/herpes.jpg" alt="Imagen">
 	    <p>E. J. de 22 años de edad consultó el 03-09-11 muy preocupada  por padecer hace ya casi un año de herpes en su   zona genital, el cual resultó de un contagio por transmisión sexual de  una ex pareja.</p>
 	    <p>
 	      Presenta pequeñas vesículas en racimo (en pequeños grupos)  muy pruriginosas (con mucha picazón), que constantemente se rompen al más  mínimo roce de la ropa interior y el   baño diario, lo cual impide,  obviamente, mantener relaciones sexuales.</p>

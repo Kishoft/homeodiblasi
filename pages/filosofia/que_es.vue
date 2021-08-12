@@ -1,6 +1,7 @@
 <template>
     <section>
         <h3>¿Qué es la Homeopatía?</h3>
+        <img src="~/assets/images/pages/maria_laura_di_blasi_plantas.jpg" alt="Plantas">
         <p>Aunque cada vez resulta más frecuente escuchar hablar de Homeopatía y saber que algún pariente, amigo, conocido o vecino se ha tratado con éxito por medio de este método, sigue existiendo un amplio espectro de personas que conoce muy poco o, lo que es peor, tiene una idea distorsionada sobre la materia, por lo general producto del accionar de falsos homeópatas.</p>
         <p>La Homeopatía es una<strong> solución práctica</strong>, <strong>segura</strong>, y sobre todo muy económica, para el eficiente tratamiento de muchos <strong>trastornos de la salud</strong>. </p>
         <p>Es una rama de las <strong>Ciencias Medicas</strong> basada en el llamado <strong>Principio de la Similitud</strong>, el cúal sostiene que una sustancia capaz de producir determinados síntomas en un individuo sano, es también capaz de curar esos síntomas en un enfermo.</p>

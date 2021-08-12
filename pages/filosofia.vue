@@ -1,25 +1,35 @@
 <template>
-    <div>
+    <div id="content">
         <header>
-            <h1>Homeopatía Unicista</h1>
+            <h2>Homeopatía Unicista</h2>
         </header>
-        <SideNav/>
-        <NuxtChild/>
+        <main class="glass">
+            <SideNav/>
+            <NuxtChild/>
+        </main>
     </div>
 </template>
 
 <script>
-import SideNav from '~/components/filosofia/SideNav.vue';
+import SideNav from '~/components/SideNav.vue';
 export default {
-  components : { SideNav }
+  components : { SideNav },
+  middleware({ route, redirect}){
+    if(route.name === 'filosofia') redirect('/filosofia/que_es')
+  }
 }
 </script>
 <style scoped>
-  header{
-    background: url('~/assets/header1.jpg');
+  #content{
+    background: url('~/assets/images/header1.jpg');
     background-attachment: fixed;
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
+  }
+  
+  main{
+    display:grid;
+    grid-template-columns: var(--side-bar-width) auto;
   }
 </style>

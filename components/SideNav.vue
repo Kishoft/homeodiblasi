@@ -1,8 +1,9 @@
 <template>
   <aside>
+    <nav v-if="$nuxt.$route.name.includes('casos')">
     <NuxtLink to="/casos/gastritis_cronica">Gastritis Crónica</NuxtLink>
     <NuxtLink to="/casos/rinitis_alergica">Rinitis Alérgica</NuxtLink>
-    <NuxtLink to="/casos/migrania">Un Caso de Migraña</NuxtLink>
+    <NuxtLink to="/casos/migrania">Migraña</NuxtLink>
     <NuxtLink to="/casos/infeccion_urinaria">Infección Urinaria</NuxtLink>
     <NuxtLink to="/casos/sindrome_reynaud">Síndrome de Reynaud<br />(insuficiencia vascular)</NuxtLink>
     <NuxtLink to="/casos/dishidrosis">Dishidrosis</NuxtLink>
@@ -21,9 +22,9 @@
     <NuxtLink to="/casos/menopausia">Una Mujer Menopáusica</NuxtLink>
     <NuxtLink to="/casos/artrosis">Artrosis y tromboflebitis</NuxtLink>
     <NuxtLink to="/casos/colon">Colon irritable y Hemorroides</NuxtLink>
-    <NuxtLink to="/casos/eccema">Un caso de Eccema</NuxtLink>
-    <NuxtLink to="/casos/depresion_grave">Un caso de Depresion Grave</NuxtLink>
-    <NuxtLink to="/casos/aftas_a_repeticion">Un caso de Aftas</NuxtLink>
+    <NuxtLink to="/casos/eccema">Eccema</NuxtLink>
+    <NuxtLink to="/casos/depresion_grave">Depresion Grave</NuxtLink>
+    <NuxtLink to="/casos/aftas_a_repeticion">Aftas</NuxtLink>
     <NuxtLink to="/casos/hiperquinesia">Hiperquinesia</NuxtLink>
     <NuxtLink to="/casos/bronquiolitis">Bronquiolitis</NuxtLink>
     <NuxtLink to="/casos/fibromialgia">Fibromialgia</NuxtLink>
@@ -31,6 +32,18 @@
     <NuxtLink to="/casos/psoriasis">Psoriasis</NuxtLink>
     <NuxtLink to="/casos/tos">Tos Cronica</NuxtLink>
     <NuxtLink to="/casos/herpes">Herpes Genital</NuxtLink>
+    </nav>
+    <nav v-if="$nuxt.$route.name.includes('filosofia')">
+      <NuxtLink to="/filosofia/que_es">¿Qué es?</NuxtLink>
+      <NuxtLink to="/filosofia/cuando_nace">¿Cuándo nace?</NuxtLink>
+      <NuxtLink to="/filosofia/como_actua">¿Cómo actúa?</NuxtLink>
+      <NuxtLink to="/filosofia/tratamiento_homeopatico_alopatico">¿Qué diferencia hay entre el tratamiento Homeopático y el Alopático?</NuxtLink>
+      <NuxtLink to="/filosofia/consulta_homeopatia">¿Cómo es una consulta con un Médico Homeópata?</NuxtLink>
+      <NuxtLink to="/filosofia/enfermedad">Enfermedad ¿es sinónimo de enfermo?</NuxtLink>
+      <NuxtLink to="/filosofia/especialidad_medica">¿Por qué no está reconocida la Homeopatía como especialidad Médica?</NuxtLink>
+      <NuxtLink to="/filosofia/ciencia">La Homeopatía, ¿es científica?</NuxtLink>
+      <NuxtLink to="/filosofia/que_cura">¿Qué enfermedades puede curar la Homeopatía?</NuxtLink>
+    </nav>
   </aside>
 </template>
 
@@ -41,10 +54,23 @@ export default {
 </script>
 
 <style>
-  aside{
+  aside nav{
     display:flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: center;
+    justify-content: flex-start;
+    background: var(--color3);
+    height: 100%;
+    border-radius: 5px;
+  }
+  aside nav a{
+    text-decoration: none;
+    color: var(--color2);
+    margin: 2px;
+    padding: 5px;
+    border-radius: 5px;
+  }
+  aside nav a:hover{
+    text-decoration: underline;
   }
 </style>

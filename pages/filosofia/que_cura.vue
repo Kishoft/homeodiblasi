@@ -1,6 +1,7 @@
 <template>
   <section>
-      	<h3> Qué enfermedades puede curar la Homeopatía?</h3>
+      <h3> Qué enfermedades puede curar la Homeopatía?</h3>
+      <img src="~/assets/images/pages/di_blasi_frascos_homeopaticos.jpg" alt="Plantas">
 	    <p>La Homeopatía  ha resultado ser muy útil y eficaz en el tratamiento de muchos de los trastornos más comunes (y otros no tanto) de infinidad de niños, jóvenes y adultos, como por ejemplo: 
 	      <strong class="verdecitos">::</strong> Asma 
           <strong class="verdecitos">:: </strong>Anginas y Otitis a Repetición

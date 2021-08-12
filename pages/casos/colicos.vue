@@ -1,7 +1,7 @@
 <template>
   <section>
-      <h3>Caso Colicos Renales</h3>
-
+      	<h3>Caso Colicos Renales</h3>
+      	<img src="~/assets/images/pages/colicos.jpg" alt="Imagen">
 	    <p>Alberto de  60 años consulta en febrero del 2007 por sufrir desde joven fuertes episodios  de cólicos renales del lado izquierdo.</p>
 	    <p>
 	      Me cuenta  que ha tenido que asistir varias veces a las guardias para aplicarse  inyectables o sueros para calmar el insoportable dolor.</p>

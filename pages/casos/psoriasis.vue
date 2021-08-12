@@ -1,6 +1,7 @@
 <template>
   <section>
-    <h3>Caso Psoriasis y Artritis Psoriasica</h3>
+    	<h3>Caso Psoriasis y Artritis Psoriasica</h3>
+      	<img src="~/assets/images/pages/psoriasis.jpg" alt="Imagen">
 	    <p>J.A. se presentó en mi consultorio el día 12-11-10  presentando una psoriasis de varios años de evolución (desde que era joven).  Presenta lesiones descamantes en codos, espalda, rodillas y abdomen. Las lesiones  pican mucho, principalmente de noche, y   empeoran si el clima es frío o si se coloca frio localmente sobre las  lesiones.</p>
 	    <p>
 	      La artritis psoriásica (localización de la psoriasis en  articulaciones) comenzó hace 5 años aproximadamente. Esta afecta principalmente  sus pies, lo cual le impide caminar más de una cuadra, ya que debe pararse  porque el dolor se hace realmente insoportable.</p>

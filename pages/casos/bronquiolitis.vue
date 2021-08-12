@@ -1,6 +1,7 @@
 <template>
   <section>
-      <h3>Caso Bronquiolitis</h3>
+      	<h3>Caso Bronquiolitis</h3>
+      	<img src="~/assets/images/pages/bronquiolitis.jpg" alt="Imagen">
 	    <p> B. M. es un  bebé de 8 meses que es traído a la consulta en noviembre de 2006 por su madre  por haber presentado ya 4 episodios de bronquiolitis durante el invierno  en los escasos meses que tiene de vida.</p>
 	    <p>
 	      Estuvo  internado en una oportunidad y las otras veces en observación en guardia varias  horas con Puf de salbutamol y corticoides (budesonide) vía oral.</p>

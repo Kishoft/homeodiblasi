@@ -1,20 +1,21 @@
 <template>
-  <section>
-      <h3>Hiperquinesia en Niños</h3>
-	    <p>La <strong>hiperquinesia </strong>es un trastorno de  conducta que se caracteriza por inquietud y falta de atención excesiva  atípicas.</p>
-	    <p>
-	      Los  trastornos hipercinéticos tienen un comienzo temprano (por lo general durante  los cinco primeros años de la vida). Sus características principales son una  falta de persistencia en actividades que requieren la participación de procesos  cognoscitivos y una tendencia a cambiar de una actividad a otra sin terminar  ninguna, junto con una actividad desorganizada, mal regulada y excesiva.</p>
-	    <p>
-	      El trastorno  puede acompañarse de otras anomalías: Los niños hiperquinéticos suelen ser  descuidados e impulsivos, propensos a accidentes, y plantean problemas de  disciplina por saltarse normas.</p>
-	    <p>
-	      Su relación  social con los adultos suelen ser desinhibidas, con una falta de la prudencia y  reserva naturales. Son impopulares con otros niños y pueden llegar a  convertirse en niños aislados. Es frecuente la presencia de un déficit  cognoscitivo y son extraordinariamente frecuentes los retrasos específicos en  el desarrollo motor y del lenguaje.</p>
-	    <p>
-	      <strong class="verdecitos">Pautas para el diagnóstico </strong></p>
-	    <p>
-	      Los rasgos  cardinales son el déficit de atención y la hiperactividad. El diagnóstico  requiere la presencia de ambos, que deben manifestarse en más de una situación  (por ejemplo, en clase, en la consulta).
-	      
-	      El trastorno de la atención se pone de manifiesto por una interrupción  prematura de la ejecución de tareas y por dejar actividades sin terminar.</p>
-	    <p>
+    <section>
+        <h3>Hiperquinesia en Niños</h3>
+      	<img src="~/assets/images/pages/hiperquinesia.jpg" alt="Imagen">
+	      <p>La <strong>hiperquinesia </strong>es un trastorno de  conducta que se caracteriza por inquietud y falta de atención excesiva  atípicas.</p>
+	      <p>
+	        Los  trastornos hipercinéticos tienen un comienzo temprano (por lo general durante  los cinco primeros años de la vida). Sus características principales son una  falta de persistencia en actividades que requieren la participación de procesos  cognoscitivos y una tendencia a cambiar de una actividad a otra sin terminar  ninguna, junto con una actividad desorganizada, mal regulada y excesiva.</p>
+	      <p>
+	        El trastorno  puede acompañarse de otras anomalías: Los niños hiperquinéticos suelen ser  descuidados e impulsivos, propensos a accidentes, y plantean problemas de  disciplina por saltarse normas.</p>
+	      <p>
+	        Su relación  social con los adultos suelen ser desinhibidas, con una falta de la prudencia y  reserva naturales. Son impopulares con otros niños y pueden llegar a  convertirse en niños aislados. Es frecuente la presencia de un déficit  cognoscitivo y son extraordinariamente frecuentes los retrasos específicos en  el desarrollo motor y del lenguaje.</p>
+	      <p>
+	        <strong class="verdecitos">Pautas para el diagnóstico </strong></p>
+	      <p>
+	        Los rasgos  cardinales son el déficit de atención y la hiperactividad. El diagnóstico  requiere la presencia de ambos, que deben manifestarse en más de una situación  (por ejemplo, en clase, en la consulta).
+  
+	        El trastorno de la atención se pone de manifiesto por una interrupción  prematura de la ejecución de tareas y por dejar actividades sin terminar.</p>
+	      <p>
 	      Los  rasgos asociados, que apoyan el diagnóstico aunque no son suficientes ni  necesarios para el mismo, son: desinhibición en la relación social, falta de  precaución en las situaciones de peligro, quebrantamiento impulsivo de algunas  normas sociales , trastornos del aprendizaje y   torpeza en los movimientos . </p>
         <span class="verdecitos">El Caso de Marcos</span>
         <p>

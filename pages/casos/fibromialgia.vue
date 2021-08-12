@@ -1,6 +1,7 @@
 <template>
   <section>
-       <h3>Caso Fibromialgia</h3>
+       	<h3>Caso Fibromialgia</h3>
+      	<img src="~/assets/images/pages/fibromialgia.jpg" alt="Imagen">
 	    <p>Lidia de 52  años de edad se presenta en la consulta en agosto del 2008 por padecer hace ya  cinco años dolores corporales generalizados diagnosticados por su médico  reumatólogo como FIBROMIALGIA.</p>
 	    <p>
 	      Es  importante destacar que  dolores comenzaron  al sufrir una infidelidad por parte de su pareja (decepción), la cual no  perdona ni puede superar ni olvidar.</p>

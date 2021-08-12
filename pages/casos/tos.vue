@@ -1,7 +1,7 @@
 <template>
   <section>
-      <h3>Caso Tos Crónica</h3>
-
+      	<h3>Caso Tos Crónica</h3>
+      	<img src="~/assets/images/pages/tos.jpg" alt="Imagen">
 	    <p>L.M. de 31  años de edad me visita en el mes de octubre del 2011 por padecer hace ya casi  un año una tos seca, agotadora, con picazón en la garganta que lo obliga a  carraspear casi constantemente.</p>
 	    <p>
 	      L.M.  relaciona el comienzo de la tos así como las exacerbaciones de la misma con el  stress laboral (comenzó este nuevo trabajo hace un año y medio y  refiere que es un ambiente muy competitivo y  que genera muchas responsabilidades).</p>
