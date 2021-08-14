@@ -51,6 +51,7 @@ export default {
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
+    box-sizing: border-box;
   }
   
   #consultorios, #formulario{

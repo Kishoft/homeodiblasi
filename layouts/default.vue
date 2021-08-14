@@ -25,12 +25,16 @@ export default {
     :root{
       --nav-bar-height: 80px;
     }
+    section img{
+      max-width: 120px;
+    }
   }
   html, body{
     margin: 0;
     padding: 0;
     font-family: 'Segoe UI', Tahoma, Verdana, Arial, Helvetica, sans-serif;
-    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-padding-top: var(--nav-bar-height);
   }
   body, #content{
     min-height: 100vh;

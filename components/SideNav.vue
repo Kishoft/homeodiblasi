@@ -1,52 +1,52 @@
 <template>
   <aside :style="{ left: open ? '0' : '-100%' }">
     <div id="aside-toggle-btn" class="glass" @click.prevent="toggle">
-      <div :style="{ transform : open ? 'rotate(35deg) translateY(5px)' : 'rotate(40deg) translateY(5px)' }" class="aside-line"></div>
-      <div :style="{ transform : open ? 'rotate(-35deg) translateY(5px)' : 'rotate(-40deg) translateY(-5px)' }" class="aside-line"></div>
+      <div :style="{ transform : open ? 'rotate(37deg) translateX(5px)' : 'rotate(22deg)' }" class="aside-line"></div>
+      <div :style="{ transform : open ? 'rotate(-37deg) translateX(5px)' : 'rotate(-22deg)' }" class="aside-line"></div>
     </div>
-    <nav v-if="$nuxt.$route.name.includes('casos')" :style="{ display: open ? 'flex' : 'none'}">
-      <NuxtLink to="/casos/gastritis_cronica">Gastritis Crónica</NuxtLink>
-      <NuxtLink to="/casos/rinitis_alergica">Rinitis Alérgica</NuxtLink>
-      <NuxtLink to="/casos/migrania">Migraña</NuxtLink>
-      <NuxtLink to="/casos/infeccion_urinaria">Infección Urinaria</NuxtLink>
-      <NuxtLink to="/casos/sindrome_reynaud">Síndrome de Reynaud<br />(insuficiencia vascular)</NuxtLink>
-      <NuxtLink to="/casos/dishidrosis">Dishidrosis</NuxtLink>
-      <NuxtLink to="/casos/asma">Niña con Asma</NuxtLink>
-      <NuxtLink to="/casos/sinusitis_cronica">Sinusitis Crónica</NuxtLink>
-      <NuxtLink to="/casos/hiperplasia_prostata">Hiperplasia de Próstata</NuxtLink>
-      <NuxtLink to="/casos/dismenorrea">Dismenorrea y Alteraciones menstruales</NuxtLink>
-      <NuxtLink to="/casos/depresion">Depresión</NuxtLink>
-      <NuxtLink to="/casos/varices">Varices y Gastritis Crónica</NuxtLink>
-      <NuxtLink to="/casos/sobrepeso">Sobrepeso</NuxtLink>
-      <NuxtLink to="/casos/panico">Ataque de Pánico</NuxtLink>
-      <NuxtLink to="/casos/verrugas">Un niño con Verrugas</NuxtLink>
-      <NuxtLink to="/casos/hiperemesis">Hiperémesis Gravídica</NuxtLink>
-      <NuxtLink to="/casos/hiperqueratosis">Hiperqueratosis Plantar</NuxtLink>
-      <NuxtLink to="/casos/ezquizofrenia">Un Joven Esquizofrénico</NuxtLink>
-      <NuxtLink to="/casos/menopausia">Una Mujer Menopáusica</NuxtLink>
-      <NuxtLink to="/casos/artrosis">Artrosis y tromboflebitis</NuxtLink>
-      <NuxtLink to="/casos/colon">Colon irritable y Hemorroides</NuxtLink>
-      <NuxtLink to="/casos/eccema">Eccema</NuxtLink>
-      <NuxtLink to="/casos/depresion_grave">Depresion Grave</NuxtLink>
-      <NuxtLink to="/casos/aftas_a_repeticion">Aftas</NuxtLink>
-      <NuxtLink to="/casos/hiperquinesia">Hiperquinesia</NuxtLink>
-      <NuxtLink to="/casos/bronquiolitis">Bronquiolitis</NuxtLink>
-      <NuxtLink to="/casos/fibromialgia">Fibromialgia</NuxtLink>
-      <NuxtLink to="/casos/colicos">Cólicos Renales</NuxtLink>
-      <NuxtLink to="/casos/psoriasis">Psoriasis</NuxtLink>
-      <NuxtLink to="/casos/tos">Tos Cronica</NuxtLink>
-      <NuxtLink to="/casos/herpes">Herpes Genital</NuxtLink>
+    <nav v-if="$nuxt.$route.name.includes('casos')">
+      <NuxtLink to="/casos/gastritis_cronica" @click.native="close">Gastritis Crónica</NuxtLink>
+      <NuxtLink to="/casos/rinitis_alergica" @click.native="close">Rinitis Alérgica</NuxtLink>
+      <NuxtLink to="/casos/migrania" @click.native="close">Migraña</NuxtLink>
+      <NuxtLink to="/casos/infeccion_urinaria" @click.native="close">Infección Urinaria</NuxtLink>
+      <NuxtLink to="/casos/sindrome_reynaud" @click.native="close">Síndrome de Reynaud<br />(insuficiencia vascular)</NuxtLink>
+      <NuxtLink to="/casos/dishidrosis" @click.native="close">Dishidrosis</NuxtLink>
+      <NuxtLink to="/casos/asma" @click.native="close">Niña con Asma</NuxtLink>
+      <NuxtLink to="/casos/sinusitis_cronica" @click.native="close">Sinusitis Crónica</NuxtLink>
+      <NuxtLink to="/casos/hiperplasia_prostata" @click.native="close">Hiperplasia de Próstata</NuxtLink>
+      <NuxtLink to="/casos/dismenorrea" @click.native="close">Dismenorrea y Alteraciones menstruales</NuxtLink>
+      <NuxtLink to="/casos/depresion" @click.native="close">Depresión</NuxtLink>
+      <NuxtLink to="/casos/varices" @click.native="close">Varices y Gastritis Crónica</NuxtLink>
+      <NuxtLink to="/casos/sobrepeso" @click.native="close">Sobrepeso</NuxtLink>
+      <NuxtLink to="/casos/panico" @click.native="close">Ataque de Pánico</NuxtLink>
+      <NuxtLink to="/casos/verrugas" @click.native="close">Un niño con Verrugas</NuxtLink>
+      <NuxtLink to="/casos/hiperemesis" @click.native="close">Hiperémesis Gravídica</NuxtLink>
+      <NuxtLink to="/casos/hiperqueratosis" @click.native="close">Hiperqueratosis Plantar</NuxtLink>
+      <NuxtLink to="/casos/ezquizofrenia" @click.native="close">Un Joven Esquizofrénico</NuxtLink>
+      <NuxtLink to="/casos/menopausia" @click.native="close">Una Mujer Menopáusica</NuxtLink>
+      <NuxtLink to="/casos/artrosis" @click.native="close">Artrosis y tromboflebitis</NuxtLink>
+      <NuxtLink to="/casos/colon" @click.native="close">Colon irritable y Hemorroides</NuxtLink>
+      <NuxtLink to="/casos/eccema" @click.native="close">Eccema</NuxtLink>
+      <NuxtLink to="/casos/depresion_grave" @click.native="close">Depresion Grave</NuxtLink>
+      <NuxtLink to="/casos/aftas_a_repeticion" @click.native="close">Aftas</NuxtLink>
+      <NuxtLink to="/casos/hiperquinesia" @click.native="close">Hiperquinesia</NuxtLink>
+      <NuxtLink to="/casos/bronquiolitis" @click.native="close">Bronquiolitis</NuxtLink>
+      <NuxtLink to="/casos/fibromialgia" @click.native="close">Fibromialgia</NuxtLink>
+      <NuxtLink to="/casos/colicos" @click.native="close">Cólicos Renales</NuxtLink>
+      <NuxtLink to="/casos/psoriasis" @click.native="close">Psoriasis</NuxtLink>
+      <NuxtLink to="/casos/tos" @click.native="close">Tos Cronica</NuxtLink>
+      <NuxtLink to="/casos/herpes" @click.native="close">Herpes Genital</NuxtLink>
     </nav>
-    <nav v-if="$nuxt.$route.name.includes('filosofia')" :class="{ open }">
-      <NuxtLink to="/filosofia/que_es">¿Qué es?</NuxtLink>
-      <NuxtLink to="/filosofia/cuando_nace">¿Cuándo nace?</NuxtLink>
-      <NuxtLink to="/filosofia/como_actua">¿Cómo actúa?</NuxtLink>
-      <NuxtLink to="/filosofia/tratamiento_homeopatico_alopatico">¿Qué diferencia hay entre el tratamiento Homeopático y el Alopático?</NuxtLink>
-      <NuxtLink to="/filosofia/consulta_homeopatia">¿Cómo es una consulta con un Médico Homeópata?</NuxtLink>
-      <NuxtLink to="/filosofia/enfermedad">Enfermedad ¿es sinónimo de enfermo?</NuxtLink>
-      <NuxtLink to="/filosofia/especialidad_medica">¿Por qué no está reconocida la Homeopatía como especialidad Médica?</NuxtLink>
-      <NuxtLink to="/filosofia/ciencia">La Homeopatía, ¿es científica?</NuxtLink>
-      <NuxtLink to="/filosofia/que_cura">¿Qué enfermedades puede curar la Homeopatía?</NuxtLink>
+    <nav v-if="$nuxt.$route.name.includes('filosofia')">
+      <NuxtLink to="/filosofia/que_es" @click.native="close">¿Qué es?</NuxtLink>
+      <NuxtLink to="/filosofia/cuando_nace" @click.native="close">¿Cuándo nace?</NuxtLink>
+      <NuxtLink to="/filosofia/como_actua" @click.native="close">¿Cómo actúa?</NuxtLink>
+      <NuxtLink to="/filosofia/tratamiento_homeopatico_alopatico" @click.native="close">¿Qué diferencia hay entre el tratamiento Homeopático y el Alopático?</NuxtLink>
+      <NuxtLink to="/filosofia/consulta_homeopatia" @click.native="close">¿Cómo es una consulta con un Médico Homeópata?</NuxtLink>
+      <NuxtLink to="/filosofia/enfermedad" @click.native="close">Enfermedad ¿es sinónimo de enfermo?</NuxtLink>
+      <NuxtLink to="/filosofia/especialidad_medica" @click.native="close">¿Por qué no está reconocida la Homeopatía como especialidad Médica?</NuxtLink>
+      <NuxtLink to="/filosofia/ciencia" @click.native="close">La Homeopatía, ¿es científica?</NuxtLink>
+      <NuxtLink to="/filosofia/que_cura" @click.native="close">¿Qué enfermedades puede curar la Homeopatía?</NuxtLink>
     </nav>
   </aside>
 </template>
@@ -55,7 +55,7 @@
 export default {
   data(){
     return {
-      open : true
+      open : false
     }
   },
   computed: {
@@ -76,7 +76,8 @@ export default {
 
 <style>
   aside {
-    position: static;
+    background: var(--color3);
+    border-radius: 10px;
   }
   aside nav{
     display:flex;
@@ -85,7 +86,6 @@ export default {
     align-items: flex-start;
     justify-content: flex-start;
     height: 100%;
-    border-radius: 5px;
   }
 
   aside nav a{
@@ -103,14 +103,16 @@ export default {
   #aside-toggle-btn{
     display:none;
   }
-  
+
   @media (max-width: 830px) {
     aside{
       position: fixed;
       top: 0;
       width: 100%;
       transition: left .3s ease-in-out;
-      background: var(--color3);
+      max-height: calc(100vh - 20vh - var(--nav-bar-height) - 2px);
+      overflow-y: scroll;
+      box-sizing: border-box;
     }
     #aside-toggle-btn{
       display:flex;
@@ -125,8 +127,8 @@ export default {
       border-radius: 5px;
       padding: 5px;
       position: fixed;
-      top: -45px;
-      left: 0px;
+      top: -50px;
+      left: 5px;
       z-index: 9999;
     }
 
@@ -135,6 +137,9 @@ export default {
       width: 100%;
       height: 5px;
       background: var(--color2);
+      transform-origin: left;
+      border-radius: 5px;
+      transition: all .5s ease;
     }
 
   }

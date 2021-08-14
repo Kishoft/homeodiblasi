@@ -100,6 +100,8 @@ export default {
       display: flex;
       width: 100%;
       height: 5px;
+      transform-origin: left;
+      transition: all .5s ease;
       background: var(--color2);
     }
     #top-bar nav{
@@ -108,10 +110,6 @@ export default {
       transition: all .3s ease-in-out;
       top: var(--nav-bar-height);
       width: 100%;
-    }
-    .top-bar-line{
-      transform-origin: left;
-      transition: all .5s ease;
     }
   }
 </style>
