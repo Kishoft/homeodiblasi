@@ -4,7 +4,6 @@
             <h2 class="glass">Consultorios</h2>
         </header>
         <main class="glass">
-            
         </main>
     </div>
 </template>

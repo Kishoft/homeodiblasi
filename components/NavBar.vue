@@ -1,6 +1,6 @@
 <template>
 <div id="top-bar" class="glass">
-  <div id="top-bar-toggle-btn" :class="{ open: isOpen }" @click.prevent="toggle">
+  <div id="top-bar-toggle-btn" @click.prevent="toggle">
     <div :style="{ transform : open ? 'rotate(37deg) translateX(5px)' : 'rotate(0deg)' }" class="top-bar-line"></div>
     <div :style="{ opacity : open ? 0 : 1 }" class="top-bar-line"></div>
     <div :style="{ transform : open ? 'rotate(-37deg) translateX(5px)' : 'rotate(0deg)' }" class="top-bar-line"></div>

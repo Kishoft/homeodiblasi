@@ -1,6 +1,10 @@
 <template>
-  <aside>
-    <nav v-if="$nuxt.$route.name.includes('casos')">
+  <aside :style="{ left: open ? '0' : '-100%' }">
+    <div id="aside-toggle-btn" class="glass" @click.prevent="toggle">
+      <div :style="{ transform : open ? 'rotate(35deg) translateY(5px)' : 'rotate(40deg) translateY(5px)' }" class="aside-line"></div>
+      <div :style="{ transform : open ? 'rotate(-35deg) translateY(5px)' : 'rotate(-40deg) translateY(-5px)' }" class="aside-line"></div>
+    </div>
+    <nav v-if="$nuxt.$route.name.includes('casos')" :style="{ display: open ? 'flex' : 'none'}">
       <NuxtLink to="/casos/gastritis_cronica">Gastritis Crónica</NuxtLink>
       <NuxtLink to="/casos/rinitis_alergica">Rinitis Alérgica</NuxtLink>
       <NuxtLink to="/casos/migrania">Migraña</NuxtLink>
@@ -33,7 +37,7 @@
       <NuxtLink to="/casos/tos">Tos Cronica</NuxtLink>
       <NuxtLink to="/casos/herpes">Herpes Genital</NuxtLink>
     </nav>
-    <nav v-if="$nuxt.$route.name.includes('filosofia')">
+    <nav v-if="$nuxt.$route.name.includes('filosofia')" :class="{ open }">
       <NuxtLink to="/filosofia/que_es">¿Qué es?</NuxtLink>
       <NuxtLink to="/filosofia/cuando_nace">¿Cuándo nace?</NuxtLink>
       <NuxtLink to="/filosofia/como_actua">¿Cómo actúa?</NuxtLink>
@@ -49,20 +53,41 @@
 
 <script>
 export default {
-
+  data(){
+    return {
+      open : true
+    }
+  },
+  computed: {
+    isOpen(){
+      return this.open
+    }
+  },
+  methods: {
+    toggle(){
+      this.open = !this.open
+    },
+    close(){
+      this.open = false;
+    }
+  }
 }
 </script>
 
 <style>
+  aside {
+    position: static;
+  }
   aside nav{
     display:flex;
+    position: static;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-    background: var(--color3);
     height: 100%;
     border-radius: 5px;
   }
+
   aside nav a{
     text-decoration: none;
     color: var(--color2);
@@ -70,7 +95,47 @@ export default {
     padding: 5px;
     border-radius: 5px;
   }
+
   aside nav a:hover{
     text-decoration: underline;
+  }
+
+  #aside-toggle-btn{
+    display:none;
+  }
+  
+  @media (max-width: 830px) {
+    aside{
+      position: fixed;
+      top: 0;
+      width: 100%;
+      transition: left .3s ease-in-out;
+      background: var(--color3);
+    }
+    #aside-toggle-btn{
+      display:flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      width: 50px;
+      height: 45px;
+      border: 1px solid var(--color2);
+      box-sizing: border-box;
+      cursor: pointer;
+      border-radius: 5px;
+      padding: 5px;
+      position: fixed;
+      top: -45px;
+      left: 0px;
+      z-index: 9999;
+    }
+
+    #aside-toggle-btn .aside-line{
+      display: flex;
+      width: 100%;
+      height: 5px;
+      background: var(--color2);
+    }
+
   }
 </style>

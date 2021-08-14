@@ -32,4 +32,11 @@ export default {
     display:grid;
     grid-template-columns: var(--side-bar-width) auto;
   }
+  
+  @media (max-width: 830px) {
+    main{
+      grid-template-columns: auto;
+      grid-template-rows: auto auto;
+    }
+  }
 </style>
