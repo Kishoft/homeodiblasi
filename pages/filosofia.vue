@@ -1,7 +1,7 @@
 <template>
     <div id="content">
         <header>
-            <h2>Homeopatía Unicista</h2>
+            <h2 class="glass">Homeopatía Unicista</h2>
         </header>
         <main class="glass">
             <SideNav/>

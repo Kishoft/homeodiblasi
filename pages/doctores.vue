@@ -1,26 +1,20 @@
 <template>
   <div id="content">
     <header>
-      <h2>Doctores</h2>
+      <h2 class="glass">Doctores</h2>
     </header>
     <main class="glass">
       <section id="cards">
         <figure class="glass">
           <figcaption>
             <h4 class="doctor">Doctora María Laura Diblasi</h4>
-            <NuxtLink to="/doctores/maria">Conocer</NuxtLink>
-          </figcaption>
-        </figure>
-        <figure class="glass">
-          <figcaption>
-            <h4 class="doctor">Doctora Lucía Diblasi</h4>
-            <NuxtLink to="/doctores/lucia">Conocer</NuxtLink>
-          </figcaption>
-        </figure>
-        <figure class="glass">
-          <figcaption>
-            <h4 class="doctor">Doctor José Diblasi</h4>
-            <NuxtLink to="/doctores/jose">Conocer</NuxtLink>  
+            <h5>(M.N. :113276 - MP:332507)</h5>
+            <img src="~/assets/images/pages/dra_maria_laura_diblasi.jpg" alt="">
+            <NuxtLink to="/doctores/maria_laura_diblasi/informacion_personal">Información Personal</NuxtLink>
+            <NuxtLink to="/doctores/maria_laura_diblasi/educacion">Educación</NuxtLink>
+            <NuxtLink to="/doctores/maria_laura_diblasi/actividades_academicas">Actividades Académicas</NuxtLink>
+            <NuxtLink to="/doctores/maria_laura_diblasi/seminarios_y_cursos">Seminarios y Cursos</NuxtLink>
+            <NuxtLink to="/doctores/maria_laura_diblasi/publicaciones">Publicaciones</NuxtLink>
           </figcaption>
         </figure>
       </section>

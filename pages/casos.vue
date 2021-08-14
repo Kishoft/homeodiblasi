@@ -1,7 +1,7 @@
 <template>
     <div id="content">
         <header>
-            <h2>Casos Clínicos</h2>
+            <h2 class="glass">Casos Clínicos</h2>
         </header>
         <main class="glass">
             <SideNav/>

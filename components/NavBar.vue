@@ -1,19 +1,18 @@
 <template>
 <div id="top-bar" class="glass">
   <div id="top-bar-toggle-btn" :class="{ open: isOpen }" @click.prevent="toggle">
-    <div class="top-bar-line"></div>
-    <div class="top-bar-line"></div>
-    <div class="top-bar-line"></div>
+    <div :style="{ transform : open ? 'rotate(37deg) translateX(5px)' : 'rotate(0deg)' }" class="top-bar-line"></div>
+    <div :style="{ opacity : open ? 0 : 1 }" class="top-bar-line"></div>
+    <div :style="{ transform : open ? 'rotate(-37deg) translateX(5px)' : 'rotate(0deg)' }" class="top-bar-line"></div>
   </div>
   <figure class="logo">
     <img src="~/assets/images/s2.png" alt="Logo">
   </figure>
   <nav :style="{ left: open ? '0' : '-100%' }">
-      <NuxtLink to="/filosofia">Filosofía</NuxtLink>
-      <NuxtLink to="/doctores">Doctores</NuxtLink>
-      <NuxtLink to="/consultorios">Consultorios</NuxtLink>
-      <NuxtLink to="/casos">Casos Clínicos</NuxtLink>
-      <NuxtLink to="/contacto">Contacto</NuxtLink>
+      <NuxtLink to="/filosofia" @click.native="close">Filosofía</NuxtLink>
+      <NuxtLink to="/doctores" @click.native="close">Doctores</NuxtLink>
+      <NuxtLink to="/casos" @click.native="close">Casos Clínicos</NuxtLink>
+      <NuxtLink to="/contacto" @click.native="close">Contacto</NuxtLink>
   </nav>
 </div>
 </template>
@@ -33,6 +32,9 @@ export default {
   methods: {
     toggle(){
       this.open = !this.open
+    },
+    close(){
+      this.open = false;
     }
   }
 }
@@ -82,7 +84,7 @@ export default {
     #top-bar-toggle-btn{
       display:flex;
       flex-direction: column;
-      justify-content: space-evenly;
+      justify-content: space-between;
       align-items: center;
       width: 50px;
       height: 45px;
@@ -90,6 +92,8 @@ export default {
       box-sizing: border-box;
       margin: 20px;
       cursor: pointer;
+      border-radius: 5px;
+      padding: 5px;
     }
     #top-bar-toggle-btn .top-bar-line{
       position: relative;
@@ -103,7 +107,11 @@ export default {
       position: fixed;
       transition: all .3s ease-in-out;
       top: var(--nav-bar-height);
-      width: 80%;
+      width: 100%;
+    }
+    .top-bar-line{
+      transform-origin: left;
+      transition: all .5s ease;
     }
   }
 </style>
