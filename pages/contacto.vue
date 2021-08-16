@@ -1,7 +1,7 @@
 <template>
     <div id="content">
         <header>
-            <h2 class="glass">Consultorios</h2>
+            <h2 class="glass">Contacto</h2>
         </header>
         <main class="glass">
             <section>
@@ -12,15 +12,15 @@
                             <dt>Atienden</dt>
                             <dd>
                                 <ul>
-                                    <li>Dr José Di Blasi (adultos)</li>
-                                    <li>Dra Luciana Di Blasi (pediatra)</li>
+                                    <li><NuxtLink to="/doctores/luciana_diblasi/informacion_personal">Dra Luciana Di Blasi (pediatra)</NuxtLink></li>
+                                    <li><NuxtLink to="/doctores/jose_diblasi/informacion_personal">Dr José Di Blasi (adultos)</NuxtLink></li>
                                 </ul>
                             </dd>
                             <dt>Dirección</dt>
                             <dd>Casullo 306, 1 B. Esquina Buen Viaje, Morón</dd>
                             <dt>Teléfono</dt>
                             <dd><a href="tel:+60890957">11-6089-0957</a></dd>
-                            <dt>Whatsapp</dt>
+                            <dt>Turnos por Whatsapp</dt>
                             <dd><a href="https://api.whatsapp.com/send?phone=+1141415693&text=Hola.%20%C2%A1Buen%20d%C3%ADa!%20Quiero%20solicitar%20un%20turno%20online">11-4141-5693</a></dd>
                             <dt>Consultas por Email</dt>
                             <dd><a href="mailto:lulydiblasi@hotmail.com">lulydiblasi@hotmail.com</a></dd>
@@ -41,6 +41,8 @@
                             <dd>Av. Maganolias 456, Local 1, Villa Gral.Belgrano</dd>
                             <dt>Teléfono</dt>
                             <dd><a href="tel:+3546431504">3546 431504</a></dd>
+                            <dt>Turnos por Whatsapp</dt>
+                            <dd><a href="https://api.whatsapp.com/send?phone=+1155656130&text=Hola.%20%C2%A1Buen%20d%C3%ADa!%20Quiero%20solicitar%20un%20turno%20online">11-5565-6130</a></dd>
                             <dt>Consultas por Email</dt>
                             <dd><a href="mailto:mlauradiblasi@hotmail.com">mlauradiblasi@hotmail.com</a></dd>
                         </dl>

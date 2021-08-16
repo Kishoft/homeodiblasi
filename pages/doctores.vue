@@ -7,7 +7,7 @@
       <section id="cards">
         <figure class="glass">
           <figcaption>
-            <h3 class="doctor">Doctora María Laura Diblasi</h3>
+            <h3 class="doctor">Doctora María Laura Di Blasi</h3>
             <h5>(M.N. : 113276 - M.P. : 332507)</h5>
             <img src="~/assets/images/pages/dra_maria_laura_diblasi.jpg" alt="">
             <NuxtLink @click.native="scrollToHeader" to="/doctores/maria_laura_diblasi/informacion_personal">Información Personal</NuxtLink>
@@ -19,7 +19,7 @@
         </figure>
         <figure class="glass">
           <figcaption>
-            <h3 class="doctor">Doctora Luciana Diblasi</h3>
+            <h3 class="doctor">Doctora Luciana Di Blasi</h3>
             <h5>(M.N. : 119849 - M.P.: 333840)</h5>
             <img src="~/assets/images/pages/dra_luciana_diblasi.jpg" alt="">
             <NuxtLink @click.native="scrollToHeader" to="/doctores/luciana_diblasi/informacion_personal">Información Personal</NuxtLink>
@@ -30,7 +30,7 @@
         </figure>
         <figure class="glass">
           <figcaption>
-            <h3 class="doctor">Doctor José Diblasi</h3>
+            <h3 class="doctor">Doctor José Di Blasi</h3>
             <h5>(M.N. : 62663 - M.P. : 35493)</h5>
             <img src="~/assets/images/pages/dra_luciana_diblasi_2.jpg" alt="">
             <NuxtLink @click.native="scrollToHeader" to="/doctores/jose_diblasi/informacion_personal">Información Personal</NuxtLink>
