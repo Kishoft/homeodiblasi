@@ -90,10 +90,10 @@ export default {
 
   aside nav a{
     text-decoration: none;
-    color: var(--color2);
     margin: 2px;
     padding: 5px;
     border-radius: 5px;
+    color: var(--color2);
   }
 
   aside nav a:hover{
@@ -136,10 +136,10 @@ export default {
       display: flex;
       width: 100%;
       height: 5px;
-      background: var(--color2);
       transform-origin: left;
       border-radius: 5px;
       transition: all .5s ease;
+      background: var(--color2);
     }
 
   }

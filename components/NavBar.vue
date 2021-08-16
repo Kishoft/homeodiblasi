@@ -1,13 +1,13 @@
 <template>
 <div id="top-bar" class="glass">
+  <figure class="logo">
+    <img src="~/assets/images/s2.png" alt="Logo">
+  </figure>
   <div id="top-bar-toggle-btn" @click.prevent="toggle">
     <div :style="{ transform : open ? 'rotate(37deg) translateX(5px)' : 'rotate(0deg)' }" class="top-bar-line"></div>
     <div :style="{ opacity : open ? 0 : 1 }" class="top-bar-line"></div>
     <div :style="{ transform : open ? 'rotate(-37deg) translateX(5px)' : 'rotate(0deg)' }" class="top-bar-line"></div>
   </div>
-  <figure class="logo">
-    <img src="~/assets/images/s2.png" alt="Logo">
-  </figure>
   <nav :style="{ left: open ? '0' : '-100%' }">
       <NuxtLink to="/filosofia" @click.native="close">Filosofía</NuxtLink>
       <NuxtLink to="/doctores" @click.native="close">Doctores</NuxtLink>
@@ -44,7 +44,7 @@ export default {
   #top-bar{
     display:flex;
     width: 100%;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     position: fixed;
     top:0;
@@ -67,8 +67,8 @@ export default {
     padding: 5px 10px;
     text-decoration: none;
     text-transform: uppercase;
-    color: var(--color1);
     border-radius: 5px;
+    color: var(--color1);
   }
   #top-bar nav a:hover, #top-bar nav a.nuxt-link-exact-active, #top-bar nav a.nuxt-link-active{
     background: var(--color1);
@@ -102,6 +102,7 @@ export default {
       height: 5px;
       transform-origin: left;
       transition: all .5s ease;
+      border-radius: 5px;
       background: var(--color2);
     }
     #top-bar nav{
