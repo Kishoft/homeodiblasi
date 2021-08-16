@@ -73,4 +73,13 @@ export default {
     -webkit-backdrop-filter: blur( 15px );
     border: 1px solid rgba( 255, 255, 255, 0.4 );
   }
+  li{
+    list-style: none;
+  }
+  li::before{
+    content: '::';
+    margin-right: 5px;
+    font-weight: bold;
+    color: var(--color2);
+  }
 </style>

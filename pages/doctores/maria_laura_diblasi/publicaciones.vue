@@ -1,7 +1,6 @@
 <template>
   <section>
-      <h3>Publicaciones</h3>
-      <img src="~/assets/images/pages/homeopatia_di_blasi_escritorio_2.jpg" alt="Imagen">
+      <h4>Publicaciones</h4>
       <ul>
         <li>Publicación de Casos Clínicos Homeopáticos en la Revista Mundo Homeópata (año 2009 a la actualidad).</li>
         <li>Entrevista Radio telefónica acerca de Filosofía Homeopática en el programa de Radio “Mucho más que dos” (FM OESTE 106.9), Mayo 2009.</li>

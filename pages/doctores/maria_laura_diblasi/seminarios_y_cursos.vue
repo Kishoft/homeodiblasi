@@ -1,7 +1,6 @@
 <template>
   <section>
-      <h3>Seminarios y Cursos</h3>
-      <img src="~/assets/images/pages/homeopatia_di_blasi_sala_de_espera.jpg" alt="Imagen">
+      <h4>Seminarios y Cursos</h4>
       <ul>
         <li>Seminario sobre Fitoterapia dictado por el Instituto de Investigación y Perfeccionamiento (I.D.I.P.) (año 2008).</li>
         <li>XIII Jornadas Medicas de “Obesidad: una asignatura pendiente-Conferencia de Síndrome Metabólico en Pediatría” dictado por el Colegio de Médicos de la Pcia. De Buenos Aires, Distrito III (año 2007).</li>

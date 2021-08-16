@@ -1,7 +1,6 @@
 <template>
   <section>
-      <h3>Actividades Académicas</h3>
-      <img src="~/assets/images/pages/homeopatia_di_blasi_escritorio_2.jpg" alt="Imagen">
+      <h4>Actividades Académicas</h4>
       <ul>
         <li>Desde el año 2006 desempeñándose como ayudante de Cátedra del Dr. Francisco Eizayaga en los consultorios de Homeopatía de la Universidad Maimónides prestando ayuda a los alumnos y asistiendo al médico en cada consulta.</li>
         <li>Desde el año 2009 Titular de Cátedra de los Consultorios Universitarios de Homeopatía de la Universidad Maimónides.</li>

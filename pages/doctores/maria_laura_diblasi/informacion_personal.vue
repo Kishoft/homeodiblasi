@@ -1,6 +1,6 @@
 <template>
   <section>
-      <h3>Información Personal</h3>
+      <h4>Información Personal</h4>
       <ul>
         <li>Especialista en Medicina Familiar y General</li>
         <li>Médica Graduada con Diploma de Honor</li>

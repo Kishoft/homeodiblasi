@@ -1,7 +1,6 @@
 <template>
   <section>
-      <h3>Educación</h3>
-      <img src="~/assets/images/pages/dra_maria_laura_diblasi_homeo.jpg" alt="Imagen">
+      <h4>Educación</h4>
       <ul>
         <li>Egresada del Instituto Inmaculada de Castelar en el año 1997, como Bachiller Mercantil.</li>
         <li>Médico, graduado de la Universidad de Morón con Diploma de Honor el 25 de noviembre del año 2003.</li>
