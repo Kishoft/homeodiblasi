@@ -3,6 +3,7 @@
         <NavBar/>
         <Nuxt />
         <Footer/>
+        <Whatsapp/>
     </div>
 </template>
 
@@ -41,7 +42,7 @@ export default {
   }
   main{
     box-sizing: border-box;
-    max-width: 1200px;
+    max-width: 1400px;
     margin: auto;
     border-radius: 10px;
   }
