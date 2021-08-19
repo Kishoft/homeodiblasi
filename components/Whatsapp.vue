@@ -6,6 +6,7 @@
           <p>Las <strong>llamadas</strong> se reservan <strong>exclusivamente</strong> para sesiones con pacientes.</p>
           <a href="https://api.whatsapp.com/send?phone=+1155656130&text=Hola.%20%C2%A1Buen%20d%C3%ADa!%20Quiero%20solicitar%20un%20turno%20online">11-5565-6130</a>
       </div>
+      <div id="whatsappLegend">Solicitar<br>Turno</div>
       <div id="whatsappBtn" @click="toggle"></div>
   </div>
 </template>
@@ -48,6 +49,13 @@ export default {
         background-size: 80px;
         cursor: pointer;
     }
+    #whatsappLegend{
+        margin-left: 10px;
+        font-weight: bolder;
+        text-transform: uppercase;
+        color: var(--color3);
+        text-shadow: 0px 0px 10px black;
+    }
     #whatsappContent{
         display:flex;
         justify-content: center;
@@ -55,6 +63,7 @@ export default {
         flex-wrap: wrap;
         box-sizing: border-box;
         margin-left: 10px;
+        margin-bottom: 10px;
         padding: 10px;
         border-radius: 5px;
         max-width: 200px;
